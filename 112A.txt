@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class codeforce {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+       String first=sc.next();
+       String second =sc.next();
+      String lf=first.toLowerCase();
+       String ls=second.toLowerCase();
+        int x=lf.compareTo(ls);
+        if(x<0)
+        System.out.println("-1");
+        else if(x>0)
+            System.out.println("1");
+        else if(x==0)
+            System.out.println("0");}}

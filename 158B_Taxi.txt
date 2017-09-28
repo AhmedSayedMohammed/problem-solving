@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Codeforce {
+    
+    static int fullDiv(int x,int y){
+    if(x%y==0)
+        return x/y;
+    else
+        return x/y+1;
+    } 
+    
+    public static void main(String[] args) {
+    
+    Scanner sc=new Scanner(System.in);
+    
+    int n    = sc.nextInt();
+    int [] g = new int [n];
+    int four=0;
+    int three=0;
+    int two=0;
+    int one=0;
+            
+    for(int i=0;i<n;i++){
+    g[i]=sc.nextInt();
+    if(g[i]==4){
+    four++;
+    }
+    if(g[i]==3){
+    three++;
+    one--;
+    }
+    if(g[i]==2){
+    two++;
+    }
+    if(g[i]==1){
+    one++;
+    }
+    }
+    if(one<0)
+        one=0;
+        int sum=four+three;
+       
+     
+           int l=(two*2)+one;
+           l=fullDiv(l, 4);
+           sum+=l;
+               
+           
+          
+     
+           System.out.println(sum);
+    }
+   
+    }

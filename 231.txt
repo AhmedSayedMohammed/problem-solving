@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class codeforce {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num_problems = sc.nextInt();
+        int count = 0;
+        for (int i = 0; i < num_problems; i++) {
+              int petya =sc.nextInt();
+              int vasya=sc.nextInt();
+              int tonya=sc.nextInt();
+            if (petya == 1 && vasya == 1 || petya == 1 && tonya == 1 ||vasya == 1 && tonya == 1) {
+
+                count++;
+
+            }
+
+        }
+        System.out.println(count);}}

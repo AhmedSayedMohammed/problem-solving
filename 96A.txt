@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class codeforce {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+ 
+  boolean x=false;
+        String player = sc.next();
+        if(player.length()<7){
+            System.out.println("NO");
+        
+        }
+        else{
+        for (int i = 0; i < player.length() - 6; i++) {
+
+            if (player.subSequence(i, i + 7).equals("0000000") || player.subSequence(i, i + 7).equals("1111111")) {
+                x=true;
+                break;
+            }
+        }
+        if(x==true){
+            System.out.println("YES");
+        }
+        else
+            System.out.println("NO");
+        }}}

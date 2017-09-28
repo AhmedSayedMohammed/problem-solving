@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class codeforce {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int xrect=sc.nextInt();
+        int yrect=sc.nextInt();
+        int result=xrect*yrect/2;
+        System.out.println(result);
+    }
+    
+}

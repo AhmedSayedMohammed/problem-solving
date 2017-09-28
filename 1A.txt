@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class codeforce {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int a=sc.nextInt();
+        long Nx=n/a;
+        long Mx=m/a;
+
+   long  mx=(int)Mx;
+   long nx=(int)Nx;
+   if(n%a!=0)
+   {
+   Nx++;
+   }
+   if(m%a!=0){
+   Mx++;
+   }
+   long result=(Nx*Mx);
+            System.out.println(result);}}
