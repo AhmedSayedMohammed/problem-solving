@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author ahmed
+ */
+public class CodeForce {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int queue=sc.nextInt();
+        int time=sc.nextInt();
+        String a=sc.next();
+        
+        char a_array []=a.toCharArray();
+        for(int run_time=0;run_time<time;run_time++)
+                for(int i=0; i<a.length()-1; i++){
+         if(a_array[i]=='B'&& a_array[i+1]=='G'){
+        a_array[i]='G';
+        a_array[i+1]='B';
+           
+             i++;
+         }
+         
+        }
+                
+            System.out.println(a_array);
+        
+    }
+    
+}
