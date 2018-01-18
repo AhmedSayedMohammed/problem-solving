@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author ahmed
+ */
+public class CodeForce {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+       String s=sc.next();
+       String t=sc.next();
+       boolean condition=true;
+       for(int i=0;i<s.length();i++){
+       
+           if(s.charAt(i)!=t.charAt(t.length()-i-1)){
+              condition=false;
+              break;
+           }
+       }
+       if(condition)
+        System.out.println("YES");
+       else System.out.println("NO");
+    }
+    
+}
