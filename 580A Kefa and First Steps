@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author ahmed
+ */
+public class CodeForce {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+       
+        int n=sc.nextInt();
+        int sequence=1;
+        int oldsequence=1;
+        int a []=new int[n];
+       
+        for(int i=0;i<n;i++)
+        {
+          a[i]=sc.nextInt();
+        
+        }
+    
+        for(int i=0;i<n-1;i++)
+        {
+         if(a[i]<=a[i+1]){
+        sequence++;
+        }
+         else{
+             if(oldsequence<sequence){
+               oldsequence=sequence;
+             }
+             sequence=1;
+         }
+        }
+        if(sequence>oldsequence)
+        System.out.println(sequence);
+        else if(oldsequence>0)
+            System.out.println(oldsequence);
+        else System.out.println(oldsequence-1);
+    }
+    
+}
